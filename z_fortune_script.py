@@ -1,4 +1,4 @@
-# Todo: Refactor from if/else statements into a list matched to index for randint
+# Todo: Create an ASCII interface
 
 import random
 
@@ -24,30 +24,16 @@ while True:
       print("Please select a valid option")
       continue
 
-  fortune = random.randint(1, 7)
+  random_num = random.randint(1, 7)
 
-  if fortune == 1:
-      print("\n")
-      print("A pleasant surprise is waiting for you just around the corner.")
-  elif fortune == 2:
-      print("\n")
-      print("The effort you put in today will quietly pay off later.")
-  elif fortune == 3:
-      print("\n")
-      print("Someone will soon appreciate something you thought went unnoticed.")
-  elif fortune == 4:
-      print("\n")
-      print("A new opportunity will appear when you least expect it.")
-  elif fortune == 5:
-      print("\n")
-      print("Curiosity will lead you somewhere worthwhile.")
-  elif fortune == 6:
-      print("\n")
-      print("The answer you’re looking for will become clear with patience.")
-  elif fortune == 7:
-      print("\n")
-      print("Good fortune favors those willing to try something new.")
-  else:
-      print("\n")
-      print("Error: Fortune not found!")
+  fortune_list = ["A pleasant surprise is waiting for you just around the corner",
+                  "The effort you put in today will quietly pay off later.",
+                  "Someone will soon appreciate something you thought went unnoticed.",
+                  "A new opportunity will appear when you least expect it.",
+                  "Curiosity will lead you somewhere worthwhile.",
+                  "The answer you’re looking for will become clear with patience.",
+                  "Good fortune favors those willing to try something new."]
+
+
+  print(fortune_list[random_num])
 
